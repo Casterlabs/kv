@@ -4,7 +4,7 @@ Does what it says on the tin.
 
 ## Usage
 
-In general, if you receive a non-200 status code, then something went wrong. The response body will be an error message in plain text. The logs of the container may also contain more information about what went wrong.
+In general, if you receive a non-2XX status code, then something went wrong. The response body will be an error message in plain text. The logs of the container may also contain more information about what went wrong.
 
 See [compose.yaml](./compose.yaml) for an example of how to run the container.
 
