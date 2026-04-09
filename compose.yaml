@@ -1,0 +1,10 @@
+services:
+  kv:
+    image: ghcr.io/casterlabs/kv:latest
+    restart: always
+    environment:
+      KV_AUTH_SECRET: "abc123"
+    volumes:
+      - kv:/data # Change kv to a different volume name or a bind mount if you like.
+    ports:
+      - 9000:8080 # Change 9000 to your liking.
